@@ -1,0 +1,4 @@
+Bundle-Name: db2jcc_license_cisuz
+Bundle-SymbolicName: db2jcc_license_cisuz
+Bundle-Version: ${db2.license.version}
+Export-Package: com.ibm.db2.jcc.*;
