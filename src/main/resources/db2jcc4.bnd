@@ -1,5 +1,5 @@
 Bundle-Name: db2jcc4
 Bundle-SymbolicName: db2jcc4
-Bundle-Version: ${db2.driver.numversion}
+Bundle-Version: ${db2.driver.version}
 Export-Package: com.ibm.db2.jcc.*, sqlj.runtime.*
 Import-Package: !sun.security.action.*, !sun.io.*, !sqlj.framework.*, !COM.ibm.db2os390.sqlj.runtime,!com.ibm.websphere.interrupt, !com.ibm.zos.*,!sqlj.framework,!sqlj.mesg,!sqlj.tools,!sqlj.util.io,*

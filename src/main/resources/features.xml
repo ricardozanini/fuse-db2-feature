@@ -11,7 +11,7 @@
 	language governing permissions and limitations under the License. -->
 <features name="db2-features-repo" xmlns="http://karaf.apache.org/xmlns/features/v1.2.0">
 	<feature name="db2-jdbc" version="${project.version}">
-		<bundle>wrap:file:${db2.driver.path}/db2jcc4-${db2.driver.version}.jar,file:${db2.driver.path}/db2jcc4.bnd</bundle>
-		<bundle>wrap:file:${db2.license.path}/db2jcc_license_cisuz-${db2.license.version}.jar,file:${db2.license.path}/db2jcc_license_cisuz.bnd</bundle>
+		<bundle>wrap:${db2.driver.locationURL},file:${db2.driver.bnd.locationURL}</bundle>
+		<bundle>wrap:${db2.license.locationURL},file:${db2.license.bnd.locationURL}</bundle>
 	</feature>
 </features>
