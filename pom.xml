@@ -18,14 +18,13 @@
 	</licenses>
 	<properties>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<jboss.fuse.bom.version>6.3.0.redhat-283</jboss.fuse.bom.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.8</jdk.version>
 		
 		<!-- The properties above should be setup on -D -->
 		<!-- Paths where your libs will reside when installing on Karaf -->
-		<db2.driver.path>/home/ricferna/Downloads/jdbcDb2</db2.driver.path>
-		<db2.license.path>/home/ricferna/Downloads/jdbcDb2</db2.license.path>
+		<db2.driver.path>${user.home}/Downloads/jdbcDb2</db2.driver.path>
+		<db2.license.path>${user.home}/Downloads/jdbcDb2</db2.license.path>
 		<!-- Driver's version (the number after the "-") -->
 		<db2.driver.version>10.5.fp6</db2.driver.version>
 		<db2.driver.numversion>10.5</db2.driver.numversion>
@@ -33,72 +32,7 @@
 		
 		<version.builder-helper-plugin>3.0.0</version.builder-helper-plugin>
 	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.jboss.fuse.bom</groupId>
-				<artifactId>jboss-fuse-parent</artifactId>
-				<version>${jboss.fuse.bom.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	<dependencies>
 
-	</dependencies>
-	<repositories>
-		<repository>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>fuse-public-repository</id>
-			<name>FuseSource Community Release Repository</name>
-			<url>https://repo.fusesource.com/nexus/content/groups/public</url>
-		</repository>
-		<repository>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>red-hat-ga-repository</id>
-			<name>Red Hat GA Repository</name>
-			<url>https://maven.repository.redhat.com/ga</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>fuse-public-repository</id>
-			<name>FuseSource Community Release Repository</name>
-			<url>https://repo.fusesource.com/nexus/content/groups/public</url>
-		</pluginRepository>
-		<pluginRepository>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>red-hat-ga-repository</id>
-			<name>Red Hat GA Repository</name>
-			<url>https://maven.repository.redhat.com/ga</url>
-		</pluginRepository>
-	</pluginRepositories>
 	<build>
 		<resources>
 			<resource>
